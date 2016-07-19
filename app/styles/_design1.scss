@@ -1,0 +1,243 @@
+/* Styles for Design 1 */
+
+.su-nav {
+    background: #aa0000;
+    .navbar.navbar-suglobal {
+        min-height: 20px;
+        margin-bottom: 0;
+        .dropdown-menu.su-global-mm {
+            background: $gray;
+            border-radius: 0;
+            box-shadow: none;
+            border: none;
+        }
+        .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+            background: transparent;
+        }
+        .nav-pills > li > a {
+            border-radius: 0;
+
+            &:hover {
+                background: transparent;
+                color: $brand-yellow;
+            }
+            a, a:visited, a:link {
+                color: white;
+            }
+            a:hover, a:active {
+                color: $brand-yellow;
+            }
+        }
+        .nav > li > a {
+            padding: 0 10px;
+
+            &:hover {
+                background: transparent;
+                color: $brand-yellow;
+            }
+            a, a:visited, a:link {
+                color: white;
+            }
+            a:hover, a:active {
+                color: $brand-yellow;
+            }
+        }
+        a, a:visited, a:link {
+            color: white;
+        }
+        a:hover, a:active {
+            color: $brand-yellow;
+        }
+    }
+
+}
+.navbar-ncs {
+    border-radius: 0;
+    border: none;
+    background: $gray;
+    min-height: 40px;
+    margin-bottom: 40px;
+    border-top: 1px solid #666;
+
+    a, a:visited, a:link {
+        color: white;
+    }
+    a:hover, a:active {
+        color: $gray;
+    }
+    .nav .open a, .nav .open a:visited, .nav .open a:link {
+        color: $gray;
+    }
+    .dropdown-menu {
+        background: #eee;
+        color: $gray;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    a.navbar-brand {
+        &:hover, &:link, &:active, &:visited {
+            background-color: transparent;
+        }
+    }
+
+    .brand-heading {
+        margin: 0px !important;
+    }
+    .navbar-brand {
+        background: url(../img/ncs_redwhite.png) no-repeat;
+        background-position: left center;
+        background-size: contain;
+        margin: 5px 0px !important;
+        display: inline-block;
+        height: 65px;
+        width: 250px;
+        text-indent: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        margin-top: -50px;
+        width: 100%;
+        height: 60px;
+        background: #666;
+        -webkit-transform: skewY(-0.5deg);
+        -moz-transform: skewY(-0.5deg);
+        -ms-transform: skewY(-0.5deg);
+        -o-transform: skewY(-0.5deg);
+        transform: skewY(-0.5deg);
+        -webkit-backface-visibility: hidden;
+        z-index: -1;
+    }
+}
+
+.hero {
+    padding: 0 2rem;
+
+    h2 {
+        font-family: $font-family-serif;
+        font-size: 6rem;
+        font-weight: 900;
+        margin: 0;
+    }
+    .contact-container {
+        color: white;
+        background: $gray;
+        padding: 0 2rem 2rem 2rem;
+        width: 100%;
+
+        .lead {
+            font-weight: 300;
+            font-size: 4rem;
+            margin-bottom: 0;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 1rem;
+            font-size: 2rem;
+            color: $gray;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            margin-top: -10px;
+            width: 100%;
+            height: 60px;
+            background: $gray;
+            -webkit-transform: skewY(-1.5deg);
+            -moz-transform: skewY(-1.5deg);
+            -ms-transform: skewY(-1.5deg);
+            -o-transform: skewY(-1.5deg);
+            transform: skewY(-1.5deg);
+            -webkit-backface-visibility: hidden;
+            z-index: -1;
+        }
+    }
+}
+
+.promo-features-block {
+
+
+}
+
+.program-panels-block {
+
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 2rem;
+    background: $gray;
+    color: white;
+    a, a:visited, a:link {
+        color: white;
+    }
+    a:hover, a:active {
+        color: $brand-yellow;
+    }
+    .navbar-brand {
+        background: url(../img/ncs_redwhite.png) no-repeat;
+        background-position: left center;
+        background-size: contain;
+        margin: 5px 0px !important;
+        display: inline-block;
+        height: 65px;
+        width: 250px;
+        text-indent: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .footer-nav {
+        list-style: none;
+        padding-left: 0;
+    }
+    .footer-nav ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        margin-top: -40px;
+        width: 100%;
+        height: 60px;
+        background: #666;
+        -webkit-transform: skewY(-1.5deg);
+        -moz-transform: skewY(-1.5deg);
+        -ms-transform: skewY(-1.5deg);
+        -o-transform: skewY(-1.5deg);
+        transform: skewY(-1.5deg);
+        -webkit-backface-visibility: hidden;
+    }
+}
+
+body {
+    padding-top: 0px;
+}
+
+.btn {
+    border-radius: 0;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.remove-pad {
+    padding: 0;
+}
+.yamm .dropdown-menu {
+    left: auto;
+    right: auto;
+
+    &.bump-left {
+        right: 0;
+    }
+}
