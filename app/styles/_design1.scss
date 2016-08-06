@@ -143,9 +143,27 @@
     ul {
         padding: 0;
         list-style-type: none;
+        font-size: 1.5rem;
+        font-weight: 300;
+
+        li {
+            white-space: nowrap;
+        }
+
+        ul.links li {
+            padding: 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
 
         ul.links ul {
             padding-left: 2rem;
+            font-weight: 300;
+
+            li {
+                font-size: 1.3rem;
+            }
         }
     }
 
@@ -153,17 +171,44 @@
         color: white;
     }
     a:hover, a:active {
-        color: $gray;
+        color: $brand-red;
     }
     .nav .open a, .nav .open a:visited, .nav .open a:link {
         color: $gray;
     }
-    .dropdown-menu {
+    .nav .open a:hover, .nav .open a:active {
+        color: $brand-red;
+    }
+    .nav li a:focus {
+        color: $brand-red;
+    }
+    .dropdown-menu, .dropdown-menu:focus {
         background: #eee;
         color: $gray;
-        border: none;
+        border: transparent solid 2px;
         border-radius: 0;
         box-shadow: none;
+    }
+    .dropdown-toggle {
+        border: transparent solid 2px;
+    }
+    .open {
+        .dropdown-toggle, .dropdown-toggle:focus, .dropdown-toggle:hover {
+            z-index: 10;
+            border-color: #eee;
+            border-top: $brand-red solid 2px;
+            border-left: $brand-red solid 2px;
+            border-right: $brand-red solid 2px;
+            border-bottom: #eee solid 2px;
+        }
+        .dropdown-menu {
+            z-index: 5;
+            margin-top: -2px;
+            border-top: $brand-red solid 2px;
+            border-left: $brand-red solid 2px;
+            border-right: $brand-red solid 2px;
+            border-bottom: $brand-red solid 2px;
+        }
     }
     a.navbar-brand {
         &:hover, &:link, &:active, &:visited {
