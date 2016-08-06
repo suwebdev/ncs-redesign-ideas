@@ -6,10 +6,76 @@
         min-height: 20px;
         margin-bottom: 0;
         .dropdown-menu.su-global-mm {
-            background: $gray;
+            background: #999;
             border-radius: 0;
             box-shadow: none;
             border: none;
+            padding: 2rem 2rem 10px 2rem;
+
+            .su-logo-img {
+                display: inline-block;
+                height: 60px;
+                width: 200px;
+                background: url('../img/su-logo-lg.png') left center no-repeat;
+                background-size: contain;
+                text-indent: 300px;
+                overflow: hidden;
+                white-space: nowrap;
+                margin-top: 2rem;
+            }
+
+            input {
+                padding: 0.5rem;
+                font-size: 1.8rem;
+                font-weight: 300;
+                color: $gray-light;
+                display: inline-block;
+                width: 100%;
+                margin: 1rem 0;
+
+                &:focus {
+                    color: $gray;
+                }
+            }
+
+            ul {
+                padding: 0;
+                list-style-type: none;
+                font-size: 1.8rem;
+                font-weight: 300;
+
+                li {
+                    margin: 1rem 0;
+                }
+
+                &.suglobal-submenu-icons {
+                    font-size: 1.5rem;
+
+                    .fa {
+                        margin-right: 10px;
+                    }
+                }
+                &.border-right {
+                    border-right: 1px solid rgba(255,255,255,0.3);
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                margin-top: -5px;
+                width: 100%;
+                height: 30px;
+                background: #888;
+                -webkit-transform: skewY(-0.5deg);
+                -moz-transform: skewY(-0.5deg);
+                -ms-transform: skewY(-0.5deg);
+                -o-transform: skewY(-0.5deg);
+                transform: skewY(-0.5deg);
+                -webkit-backface-visibility: hidden;
+                z-index: -1;
+                border-bottom: $brand-red solid 5px;
+            }
         }
         .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
             background: transparent;
@@ -17,39 +83,43 @@
         .nav-pills > li > a {
             border-radius: 0;
 
-            &:hover {
+            &:hover, &:focus {
                 background: transparent;
                 color: $brand-yellow;
+                text-decoration: none;
             }
             a, a:visited, a:link {
                 color: white;
             }
-            a:hover, a:active {
+            a:hover, a:focus, a:active {
                 color: $brand-yellow;
+                text-decoration: none;
             }
         }
         .nav > li > a {
             padding: 0 10px;
 
-            &:hover {
+            &:hover, &:focus {
                 background: transparent;
                 color: $brand-yellow;
+                text-decoration: none;
             }
             a, a:visited, a:link {
                 color: white;
             }
-            a:hover, a:active {
+            a:hover, a:focus, a:active {
                 color: $brand-yellow;
+                text-decoration: none;
             }
         }
         a, a:visited, a:link {
             color: white;
         }
-        a:hover, a:active {
+        a:hover, a:focus, a:active {
             color: $brand-yellow;
+            text-decoration: none;
         }
     }
-
 }
 .navbar-ncs {
     border-radius: 0;
