@@ -1,0 +1,175 @@
+/* Page Content Styles */
+
+
+body {
+    padding-top: 0px;
+}
+
+.page-content {
+    .list-group-item {
+        border-left: $brand-red solid 2px;
+        margin: 1rem 0;
+        &:first-child {
+            margin-top: 3rem;
+        }
+    }
+    blockquote {
+        padding: 11px 22px;
+        margin: 0 0 22px;
+        font-size: 2.5rem;
+        font-weight: 300;
+        border-left: 5px solid $brand-red;
+    }
+    aside {
+        width: 25%;
+        max-width: 400px;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        padding: 0;
+        h2 {
+            padding: 0 10px;
+            margin-bottom: 0 !important;
+        }
+
+        a.aside-item {
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+            padding-bottom: 8px;
+            margin: 0;
+            color: $gray;
+            display: block;
+            padding: 1rem;
+            text-decoration: none;
+
+            &:first-child {
+                margin-top: -10px;
+
+            }
+
+            &:last-child {
+                border-bottom: 1px solid transparent;
+            }
+            img {
+                width: 20%;
+                height: auto;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+            &:link, &:hover, &:active, &:visited, &:focus {
+                color: $gray;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            &:hover {
+                background: rgba(255,255,255,0.5);
+                color: $brand-red;
+            }
+        }
+    }
+    .content-meta {
+        line-height: 2;
+        margin-bottom: 4rem;
+        .last-updated {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+        i {
+            font-size: 1.6rem;
+        }
+        .decrease {
+            font-size: 1.2rem;
+        }
+        a, a:visited, a:link {
+            color: $gray-light;
+            cursor: pointer;
+        }
+        a:hover, a:focus, a:active {
+            color: $brand-red;
+        }
+    }
+    &.document.container {
+        max-width: $screen-md-min;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        &.underline {
+            border-bottom: $gray-lighter solid 1px;
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                margin-bottom: -8px;
+                bottom: 0;
+                right: 0;
+                width: 25%;
+                height: 8px;
+                background: $brand-red;
+                -webkit-backface-visibility: hidden;
+                z-index: 1;
+            }
+        }
+    }
+    .bar {
+        border-bottom: $brand-red solid 2px;
+    }
+    .multi-column {
+        @media (min-width: $screen-lg-min) {
+            @include content-columns(3, 3em);
+          }
+
+        @media (min-width: $screen-md-min) and (max-width: 1200px) {
+            @include content-columns(2, 3em);
+        }
+
+        @media (max-width: $screen-sm-max) {
+            @include content-columns(1, 0em);
+        }
+    }
+}
+
+.vert-brackets {
+    padding: 0 5rem;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: -3rem auto 0 auto;
+        width: 90%;
+        height: 30%;
+        background: white;
+        border-radius: 0;
+        border-top: 8px solid $gray-darker;
+        border-right: 8px solid $gray-darker;
+        border-left: 8px solid $gray-darker;
+        -webkit-backface-visibility: hidden;
+        z-index: -1;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto -3rem auto;
+        width: 90%;
+        height: 30%;
+        background: white;
+        border-radius: 0;
+        border-bottom: 8px solid $gray-darker;
+        border-right: 8px solid $gray-darker;
+        border-left: 8px solid $gray-darker;
+        -webkit-backface-visibility: hidden;
+        z-index: -1;
+    }
+
+}
+a {
+    transition: color 0.5s, background 0.5s;
+}
+.btn {
+    border-radius: 0;
+}

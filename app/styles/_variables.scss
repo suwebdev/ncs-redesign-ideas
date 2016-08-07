@@ -44,7 +44,7 @@ $brand-yellow-tint-trans:     rgba(255, 247, 236, 0.8);
 $brand-emerald-trans:         rgba(0, 155, 122, 0.8);
 $brand-white-trans:           rgba(255, 255, 255, 0.8);
 
-$brand-primary:         $brand-green;
+$brand-primary:         $brand-red;
 $brand-success:         $brand-yellow;
 $brand-info:            $brand-red-orange;
 $brand-warning:         $brand-navy;
@@ -79,7 +79,7 @@ $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !def
 $font-family-condensed:   "Roboto Condensed", Helvetica, sans-serif;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -96,7 +96,7 @@ $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
+$headings-font-family:    $font-family-serif;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
@@ -137,9 +137,9 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
-$border-radius-large:       6px !default;
-$border-radius-small:       3px !default;
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
@@ -177,7 +177,7 @@ $table-border-color:            #ddd !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                normal !default;
+$btn-font-weight:                500;
 
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
