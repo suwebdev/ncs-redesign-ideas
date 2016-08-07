@@ -173,3 +173,11 @@ a {
 .btn {
     border-radius: 0;
 }
+.list-group-item {
+    overflow: hidden;
+
+    img {
+        width: 25%;
+        height: auto;
+    }
+}
