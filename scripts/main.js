@@ -1,0 +1,1 @@
+"use strict";$(document).on("ready",function(){$(document).on("click",".yamm .dropdown-menu",function(n){n.stopPropagation()})});
