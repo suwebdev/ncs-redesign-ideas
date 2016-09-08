@@ -25,24 +25,6 @@
                 width: 100%;
                 z-index: 1;
                 background: #eee;
-
-                &:after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    margin-top: -5px;
-                    width: 100%;
-                    height: 30px;
-                    background: #ccc;
-                    -webkit-transform: skewY(-0.5deg);
-                    -moz-transform: skewY(-0.5deg);
-                    -ms-transform: skewY(-0.5deg);
-                    -o-transform: skewY(-0.5deg);
-                    transform: skewY(-0.5deg);
-                    -webkit-backface-visibility: hidden;
-                    z-index: -1;
-                    border-bottom: $brand-red solid 5px;
-                }
             }
 
             .su-logo-img {
@@ -242,22 +224,6 @@
         overflow: hidden;
         white-space: nowrap;
     }
-    &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        margin-top: -50px;
-        width: 100%;
-        height: 60px;
-        background: #666;
-        -webkit-transform: skewY(-0.5deg);
-        -moz-transform: skewY(-0.5deg);
-        -ms-transform: skewY(-0.5deg);
-        -o-transform: skewY(-0.5deg);
-        transform: skewY(-0.5deg);
-        -webkit-backface-visibility: hidden;
-        z-index: -1;
-    }
 }
 
 .footer {
@@ -347,7 +313,7 @@
         li {
             margin-top: 0.5rem;
             white-space: nowrap;
-            font-weight: 500;
+            font-weight: 300;
         }
 
         ul {
@@ -359,22 +325,6 @@
                 margin-top: 0.2rem;
             }
         }
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        margin-top: -40px;
-        width: 100%;
-        height: 60px;
-        background: #666;
-        border-top: 8px solid $brand-red;
-        -webkit-transform: skewY(-1.5deg);
-        -moz-transform: skewY(-1.5deg);
-        -ms-transform: skewY(-1.5deg);
-        -o-transform: skewY(-1.5deg);
-        transform: skewY(-1.5deg);
-        -webkit-backface-visibility: hidden;
     }
 }
 

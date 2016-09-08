@@ -1,6 +1,6 @@
 /* homepage styles */
 .hero {
-    padding: 0 2rem;
+    padding: 4rem;
 
     h2 {
         font-family: $font-family-serif;
@@ -12,7 +12,9 @@
         color: $gray;
         background: $gray-lighter;
         padding: 0 2rem 2rem 2rem;
-        width: 100%;
+        width: 80%;
+        display: inline-block;
+        text-align: left;
 
         .lead {
             font-weight: 300;
@@ -25,24 +27,6 @@
             padding: 1rem;
             font-size: 2rem;
             color: $gray;
-        }
-
-        &:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            margin-top: -20px;
-            width: 100%;
-            height: 60px;
-            background: $gray-lighter;
-            border-top: $brand-red solid 2px;
-            -webkit-transform: skewY(-0.5deg);
-            -moz-transform: skewY(-0.5deg);
-            -ms-transform: skewY(-0.5deg);
-            -o-transform: skewY(-0.5deg);
-            transform: skewY(-0.5deg);
-            -webkit-backface-visibility: hidden;
-            z-index: -1;
         }
     }
 }
@@ -68,21 +52,6 @@
         min-height: 200px;
         width: 45%;
         padding: 4rem 2rem 2rem 2rem;
-    }
-
-    &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-top: -4px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 25%;
-        height: 8px;
-        background: $brand-red;
-        -webkit-backface-visibility: hidden;
-        z-index: 1;
     }
 }
 
@@ -130,38 +99,6 @@
             p {
                 margin: 2.5rem 1rem;
             }
-        }
-        &:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            margin-top: -50px;
-            width: 100%;
-            height: 60px;
-            background: white;
-            -webkit-transform: skewY(-1.5deg);
-            -moz-transform: skewY(-1.5deg);
-            -ms-transform: skewY(-1.5deg);
-            -o-transform: skewY(-1.5deg);
-            transform: skewY(-1.5deg);
-            -webkit-backface-visibility: hidden;
-        }
-        &:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            margin-bottom: -30px;
-            width: 100%;
-            height: 60px;
-            background: white;
-            -webkit-transform: skewY(-1.5deg);
-            -moz-transform: skewY(-1.5deg);
-            -ms-transform: skewY(-1.5deg);
-            -o-transform: skewY(-1.5deg);
-            transform: skewY(-1.5deg);
-            -webkit-backface-visibility: hidden;
         }
     }
 }
