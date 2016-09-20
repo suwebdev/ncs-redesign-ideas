@@ -132,6 +132,10 @@
     margin-bottom: 40px;
     border-top: 1px solid #666;
 
+    .icon-bar {
+        background: $brand-white;
+    }
+
     ul {
         padding: 0;
         list-style-type: none;
